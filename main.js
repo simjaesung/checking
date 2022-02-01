@@ -3,9 +3,9 @@ $(function(){
 		//options here
 		autoScrolling:true,
 		scrollHorizontally: true,
-        navigation:false,
+        navigation:true,
         navigationPosition:'right',
-        navigationTooltips:['HOME','INFORMATION','GOODS','CONTACT'],
+        navigationTooltips:[],
         showActiveTooltip: true,
 
     
