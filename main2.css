@@ -86,7 +86,7 @@ a{
    
 }
 #footer{
-    height:200px;
+    height:100px;
     display: grid;
     grid-template-columns: 1fr 9fr 1fr;	    
 }   
