@@ -20,7 +20,7 @@ a{
 }
 
 .jahwasang{
-    font-size: 10px;                    
+    font-size: 15px;                    
     font-style: italic;
     font-weight: 600;            
 }
@@ -46,7 +46,7 @@ a{
     height: 400px;
 }
 .top span{
-    font-size: 10px;   
+    font-size: 15px;   
     font-style : italic; 
     color:black; 
     font-weight: 600; 
@@ -78,7 +78,7 @@ a{
 
 
 .bottom span{
-    font-size: 5px;   
+    font-size: 10px;   
     font-style : italic; 
     color:black; 
     font-weight: 400; 
