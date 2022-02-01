@@ -3,7 +3,7 @@ $(function(){
 		//options here
 		autoScrolling:true,
 		scrollHorizontally: true,
-        navigation:true,
+        navigation:false,
         navigationPosition:'right',
         navigationTooltips:['HOME','INFORMATION','GOODS','CONTACT'],
         showActiveTooltip: true,
