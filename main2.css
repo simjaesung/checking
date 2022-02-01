@@ -12,17 +12,17 @@ a{
 #header {
     height:100%; 
     display: grid;
-    grid-template-columns: 2.5fr 5fr 2.5fr;            
+    grid-template-columns: 2fr 6fr 2fr;            
 }
 
 .jahwasang{
-    font-size: 10px;                    
+    font-size: 5px;                    
     font-style: italic;
     font-weight: 600;            
 }
 
 .line{
-    height:100px;            
+    height:50px;            
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -42,7 +42,7 @@ a{
     height: 400px;
 }
 .top span{
-    font-size: 10px;   
+    font-size: 5px;   
     font-style : italic; 
     color:black; 
     font-weight: 600; 
@@ -74,7 +74,7 @@ a{
 
 
 .bottom span{
-    font-size: 20px;   
+    font-size: 5px;   
     font-style : italic; 
     color:black; 
     font-weight: 400; 
