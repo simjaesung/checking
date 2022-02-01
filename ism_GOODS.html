@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>1sm_GOODS</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+      a{
+        text-decoration : none;
+        color: black;
+        font-style: italic;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 100%;
+        padding-top: 250px;
+        padding-bottom: 100px;
+        text-align: center;
+      }
+
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 400px;
+        height: 400px;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="ism_goods\건강하지못한것.html" onclick="openExplain(this.href); return false;">
+            <img src="ism_goods\건강하지_못한_것 최종.jpg" /><br>
+          <span>건강하지_못한_것</span></a>
+        </div>
+        
+        <div class="swiper-slide">
+          <a href="ism_goods\고백2.html" onclick="openExplain(this.href); return false;">
+            <img src="ism_goods\고백 2.jpg" /><br>
+          <span>고백 2</span></a>
+        </div>
+        <div class="swiper-slide">
+          <a href="ism_goods\능소화_무채색.html" onclick="openExplain(this.href); return false;">
+          <img src="ism_goods\능소화_무채색 최종.jpg" /><br>
+          <span>능소화_무채색</span></a>
+        </div>
+        <div class="swiper-slide">
+          <a href="ism_goods\독설.html" onclick="openExplain(this.href); return false;">
+            <img src="ism_goods\독설 최종.jpg" /><br>
+          <span>독설</span></a>
+        </div>
+        <div class="swiper-slide">
+          <a href="ism_goods\목화.html" onclick="openExplain(this.href); return false;">
+            <img src="ism_goods\목화_무채색 최종.jpg" /><br>
+          <span>목화_무채색</span></a>
+        </div>
+        <div class="swiper-slide">
+          <a href="ism_goods\방향성에대한질문.html" onclick="openExplain(this.href); return false;">
+          <img src="ism_goods\방향성에 대한 질문.jpg" /><br>
+          <span>방향성에 대한 질문</span></a>
+        </div>
+        <div class="swiper-slide">
+          <a href="ism_goods\부정의 침묵.html" onclick="openExplain(this.href); return false;">
+          <img src="ism_goods\부정의_침묵.jpg" /><br>
+          <span>부정의_침묵</span></a>
+        </div>
+        <div class="swiper-slide">
+          <a href="ism_goods\사회적순위.html" onclick="openExplain(this.href); return false;">
+          <img src="ism_goods\사회적_순위.jpg" /><br>
+          <span>사회적_순위</span></a>
+        </div>
+        <div class="swiper-slide">
+          <a href="ism_goods\안개꽃.html" onclick="openExplain(this.href); return false;">
+          <img src="ism_goods\안개꽃.jpg" /><br>
+          <span>안개꽃</span></a>
+        </div>
+        <div class="swiper-slide">
+          <a href="ism_goods\옆모습.html" onclick="openExplain(this.href); return false;">
+          <img src="ism_goods\옆모습.jpg" /><br>
+          <span>옆모습</span></a>
+        </div>
+        <div class="swiper-slide">
+          <a href="ism_goods\장미꽃.html" onclick="openExplain(this.href); return false;">
+          <img src="ism_goods\장미꽃 최종.jpg" /><br>
+          <span>장미꽃 최종</span></a>
+        </div>
+        <div class="swiper-slide">
+          <a href="ism_goods\페르소나.html" onclick="openExplain(this.href); return false;">
+          <img src="ism_goods\페르소나.jpg" /><br>
+          <span>페르소나</span></a>
+        </div>
+        <div class="swiper-slide">
+          <a href="ism_goods\향에서 맛, 그리고 다음.html" onclick="openExplain(this.href); return false;">
+          <img src="ism_goods\향에서 맛, 그리고 다음.jpg" /><br>
+          <a href=""><span>향에서 맛, 그리고 다음</span></a>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+      function openExplain(goods) { 
+        var _width = '800';
+        var _height = '800';     
+        
+        var _left = Math.ceil(( window.screen.width - _width )/2);
+        var _top = Math.ceil(( window.screen.height - _height )/2); 
+     
+        window.open(goods, 'popup-test', 'width='+ _width +', height='+ _height +', left=' + _left + ', top='+ _top );
+      }
+    </script>
+  </body>
+</html>

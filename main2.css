@@ -1,0 +1,102 @@
+ 
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+a{
+    text-decoration : none;
+    color: black;
+}
+#header {
+    height:100%; 
+    display: grid;
+    grid-template-columns: 3.5fr 3fr 3.5fr;            
+}
+
+.jahwasang{
+    font-size: 200%;                    
+    font-style: italic;
+    font-weight: 600;            
+}
+
+.line{
+    height:100px;            
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#section {
+    height:100%;      	
+} 
+#section img{
+    height: 100%;
+    width: 100%;
+}
+       
+.top{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 4fr 1fr;
+}
+.top img{
+    height: 400px;
+}
+.top span{
+    font-size: 20px;   
+    font-style : italic; 
+    color:black; 
+    font-weight: 600; 
+    margin-left: 20px;             
+}
+
+.middle{    
+    display: grid;
+    grid-template-columns: 1fr 9fr 1fr;
+}
+.middle div{
+    height: 500px;
+    
+}
+.bottom img{height: 400px;}
+
+.goods_banner{
+    display: grid;
+    grid-template-columns: 1fr 9fr 1fr;
+}
+.top_goods{
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 0.75fr 2.5fr 0.75fr 2.5fr 1fr;
+}
+.bottom_goods{
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 0.75fr 2.5fr 0.75fr 2.5fr 1fr;;
+}
+
+
+.bottom span{
+    font-size: 20px;   
+    font-style : italic; 
+    color:black; 
+    font-weight: 400; 
+    margin-left: 20px;     
+   
+}
+#footer{
+    height:200px;
+    display: grid;
+    grid-template-columns: 1fr 9fr 1fr;	    
+}   
+
+#footer div{padding-bottom: 10px;}  
+
+.foot td{
+        
+    font-size: 20px;
+    font-weight: 600; 
+}
+hr{
+    width: 1380px;
+    border: 0;
+    background: #ccc;
+    height: 3px;    
+}
