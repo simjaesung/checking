@@ -69,12 +69,13 @@ a{
 }
 .top_goods{
     display: grid;
-    grid-template-columns: 1fr 2.5fr 0.75fr 2.5fr 0.75fr 2.5fr 1fr;
+    grid-template-columns: 1fr 4fr 1fr 4fr 1fr;
 }
 .bottom_goods{
     display: grid;
-    grid-template-columns: 1fr 2.5fr 0.75fr 2.5fr 0.75fr 2.5fr 1fr;;
+    grid-template-columns: 1fr 4fr 1fr 4fr 1fr;
 }
+
 
 
 .bottom span{
