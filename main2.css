@@ -59,6 +59,7 @@ a{
 .top div{
     height: 100%;
     width: 100%;    
+    vertical-align:middle;
     text-align: center;
     font-size: 70%;   
     font-style : italic; 
