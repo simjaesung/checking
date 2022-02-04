@@ -19,12 +19,26 @@ a{
     grid-template-columns: 2fr 6fr 2fr;            
 }
 
-.jahwasang{
+.jahwasang .chin{
     font-size: 15px;                    
     font-style: italic;
-    font-weight: 600;            
+    font-weight: 600;  
+    padding:10px; 
+    writing-mode: vertical-rl;
+    margin-left:auto; 
+    margin-right:auto;          
 }
 
+.jahwasang .han{
+    text-align:center; 
+    writing-mode: vertical-rl; 
+    margin-left:auto; 
+    margin-right:auto; 
+    font-weight: 600;
+    padding:3px;     
+    font-size: 2px;  
+    font-style: italic;
+}
 .line{
     height:50px;            
     display: grid;
