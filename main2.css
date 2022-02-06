@@ -37,8 +37,9 @@ a{
     font-weight: 600;
     padding:3px;     
     font-size: 10px;  
-    
+    font-style: italic;
 }
+
 .line{
     height:50px;            
     display: grid;
@@ -53,18 +54,27 @@ a{
 }
        
 .top{
+    height: 80px;
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr 4fr 1fr;
+    grid-template-columns: 1fr 10fr 1fr;
 }
+
 .top div{
     height: 100%;
-    width: 100%;    
-    vertical-align:middle;
+    width: 100%;
     text-align: center;
-    font-size: 70%;   
-    font-style : italic; 
-    color:black; 
+        
     font-weight: 1000;                   
+}
+.top a{
+    display: inline-block;
+    padding: 35px;    
+    
+    font-size: 30px;  
+}
+
+.top .main{
+    background-color: black;
 }
 
 
@@ -90,7 +100,6 @@ a{
     display: grid;
     grid-template-columns: 1fr 4fr 1fr 4fr 1fr;
 }
-
 
 
 .bottom span{
