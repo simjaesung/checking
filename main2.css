@@ -37,7 +37,7 @@ a{
     font-weight: 600;
     padding:3px;     
     font-size: 10px;  
-    font-style: italic;
+    font-family: 'GmarketSansMedium';
 }
 
 .line{
@@ -57,6 +57,7 @@ a{
     height: 80px;
     display: grid;
     grid-template-columns: 1fr 10fr 1fr;
+    font-family: 'GmarketSansMedium';
 }
 
 .top div{
@@ -70,7 +71,7 @@ a{
     display: inline-block;
     padding: 35px;    
     
-    font-size: 100%;  
+    font-size: 25px;  
 }
 
 .top .main{
@@ -83,8 +84,7 @@ a{
     grid-template-columns: 1fr 9fr 1fr;
 }
 .middle div{
-    height: 500px;
-    
+    height: 500px;    
 }
 .bottom img{height: 400px;}
 
@@ -119,7 +119,7 @@ a{
 #footer div{padding-bottom: 10px;}  
 
 .foot td{
-        
+    font-family: 'GmarketSansMedium';
     font-size: 20px;
     font-weight: 600; 
 }
@@ -128,4 +128,10 @@ hr{
     border: 0;
     background: #ccc;
     height: 2px;    
+}
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
