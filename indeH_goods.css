@@ -1,0 +1,73 @@
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;    
+}
+a{
+    text-decoration : none;
+    color: black;
+}
+.border{
+    height: 100%;
+    margin: 80px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border:solid black 2px;
+}
+#header{
+    height: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 6fr 4fr; 
+}
+.jahwasang .chin{
+    font-size: 30px;                    
+    font-style: italic;
+    font-weight: 600;  
+    padding:10px; 
+    writing-mode: vertical-rl;
+    margin-left:auto; 
+    margin-right:auto;          
+}
+
+.jahwasang .han{
+    text-align:center; 
+    writing-mode: vertical-rl; 
+    margin-left:auto; 
+    margin-right:auto; 
+    font-weight: 600;
+    padding:3px;     
+    font-size: 20px;  
+    font-family: 'GmarketSansMedium';
+}
+.line{
+    height:100px;            
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#section{
+    display: grid;
+    grid-template-columns: 2fr 10fr;             
+    font-family: 'GmarketSansMedium';
+    font-size: 20px; 
+    height: 400px;                
+}
+#section span{
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: bolder;
+    font-style: normal;
+}
+#footer{
+    display: grid;
+    grid-template-columns: 2fr 10fr;   
+    height:100px;
+    font-family: 'GmarketSansMedium';
+    font-size: 20px;
+}   
+
+#footer div{padding-bottom: 10px;}  
