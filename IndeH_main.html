@@ -1,106 +1,241 @@
 <!DOCTYPE html>
-<html lang="ko">
-
+<html lang="en">
 <head>
-	<meta content="yes" name="apple-mobile-web-app-capable" />  
- 	<meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
-	<title>Indeofhome</title>
-	<link rel = "stylesheet" href="main2.css">
-</head>
-
-<body style="overflow-x:hidden;">
-    <div id="header">
-        <div></div>
-		<div style="text-align: center;">            
-            <br>
-            <img alt="" src="main_.jpg"/><br>            
-        </div>
-        <div>
-            <div class="line">
-                <div style="border-right: 2px solid black;"></div>
-                <div></div>
-            </div>
-            <div class="jahwasang">
-                <div class="chin"><a href="IndeH_main.html">自   畵   像</a></div>                
-                <div class="han"><div></div>자 화 상</div>
-            </div>
-        </div>
-	</div>
-    <br><br><br>
-	<div id="section">
-		<div class="top">     
-            <div></div>       
-            <div class="main" ><a href="EXHIBITION.html" style="color: white;">ABOUT - EXHIBITION</a></div>            
-            <div></div>
-        </div>   
-
-        <div class="top">     
-            <div></div>
-            <div class="main"><a href="ARTWORKS.html" style="color: white;">ARTWORKS</a></div>                    
-            <div></div>
-        </div>  
+    <meta charset="UTF-8">  
+    <title>ABOUT - EXHIBITION</title>
+    <style>
+        img {
+            height: 100%;
+            width: 100%;             
+        }
+        a{
+            text-decoration : none;
+            color: black;
+        }
+        .border{
+            height: 100%;
+            margin: 80px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            border:solid black 2px;
+        }
+        #header{
+            height:100%; 
+            display: grid;
+            grid-template-columns: 2fr 8fr 2fr; 
+        }
+        .jahwasang .chin{
+            font-size: 30px;                    
+            font-style: italic;
+            font-weight: 600;  
+            padding:10px; 
+            writing-mode: vertical-rl;
+            margin-left:auto; 
+            margin-right:auto;          
+        }
         
-        <div class="top">     
-            <div></div>
-            <div class="main"><a href="ism_main.html" style="color: white;">ABOUT - 1sm</a></div>                    
-            <div></div>
-        </div>  
+        .jahwasang .han{
+            text-align:center; 
+            writing-mode: vertical-rl; 
+            margin-left:auto; 
+            margin-right:auto; 
+            font-weight: 600;
+            padding:3px;     
+            font-size: 20px;  
+            font-family: 'GmarketSansMedium';
+        }
+        .line{
+            height:100px;            
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
 
-        <br><br><br>
-        <div class="bottom" >     
-            <div class="goods_banner">
-                <div></div>
-                <h2 style="margin-bottom: 0px; font-style:italic;">ㅡ GOODS</h2>      
-                <div></div>
-            </div>       
-            
-            <br>      
-            <div class="top_goods">
-                <div></div>
-                <div><a href="Goods_1.html"><img alt="" src="indeH_goods\순서 1.jpg"/><br><span>Sticker #1</span></a></div> 
-                <div></div>
-                <div><a href="Goods_2.html"><img alt="" src="indeH_goods\순서 2.jpg"/><br><span>Sticker #2</span></a></div> 
-                <div></div>                
+        #section img{
+            height: 100%;
+            width: 100%;
+        }
+               
+        .top{
+            height: 100px;
+            display: grid;
+            grid-template-columns: 2fr 8fr 2fr;
+            font-family: 'GmarketSansMedium';
+        }
+        
+        .top div{
+            height: 70%;
+            width: 100%;
+            text-align: center;        
+            font-weight: 1000;                   
+        }
+        .top a{
+            display: inline-block;
+            padding: 25px;       
+            font-size: 15px;  
+        }
+        .top .main{
+            background-color: black;
+        }
+        
+        #section span{
+            display: inline-block;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        
+
+        .goods_banner{
+            display: grid;
+            grid-template-columns: 1fr 9fr 1fr;
+        }
+        
+        .bottom_goods{
+            display: grid;
+            grid-template-columns: 1fr 4fr 1fr 4fr 1fr;
+        }
+        .bottom span{
+            font-size: 15px;   
+            font-style : italic; 
+            color:black; 
+            font-weight: 400; 
+            margin-left: 20px;   
+        }
+
+
+        #footer{
+            display: grid;
+            grid-template-columns: 1fr 9fr 1fr;	  
+            font-family: 'GmarketSansMedium';
+            font-size: 20px;
+            font-weight: 600;   
+        }   
+        #sry{
+            display: grid;
+            grid-template-columns: 2fr 8fr;	  
+        }
+        #sry img{
+            padding-left: 10px;
+            height: 80px;
+            width: 100px;
+        }
+        #inde{
+            display: grid;
+            grid-template-columns: 1fr 8fr;	  
+        }
+        #inde img{            
+            width: 150px;
+        }
+        hr{
+            width: 85%;
+            border: 0;
+            background: #ccc;
+            height: 2px;    
+        }
+        @font-face {
+            font-family: 'GmarketSansMedium';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+            font-weight: bolder;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <div class="border">    
+        <div id="header">
+            <div></div>
+            <div style="text-align: center;">            
+                <br>
+                <img alt="" src="main_.jpg"/><br>                
             </div>
-            <br><br><br>
-            
-            <div class="bottom_goods">
-                <div></div>
-                <div><a href="Goods_3.html"><img alt="" src="indeH_goods\순서 3.jpg"/><br><span>Paper Pack</span></a></div> 
-                <div></div>
-                <div><a href="Goods_4.html"><img alt="" src="indeH_goods\순서 4.jpg" style="width: 100%;"/><br><span>Sticker#3</span></a></div> 
-                <div></div>                
-            </div>
-            <br><br><br>
-            <div class="bottom_goods">
-                <div></div>
-                <div><a href="Goods_5.html"><img alt="" src="indeH_goods\순서 5.jpg"/><br><span>Design Tape</span></a></div> 
-                <div></div>
-                <div></div> 
-                <div></div>
-            </div>
-            
-        </div>          
-    </div>    
-    <br><br>
-	<hr>
-    <br>
-	<div id="footer">         
-        <div></div>
-        <div>
-            <div style="padding-left: 12px; padding-bottom:10px;"><a href="https://smartstore.naver.com/inde_of_home">SHOP</a></div>
-            <div style="padding-left: 12px;"><a href="https://www.instagram.com/indeh_exhibition/">INSTAGRAM</a></div>
-            <br><br>
-            <div id="sry">
-                <div><a href="https://www.instagram.com/sim_sorry/"><img alt="" src="SIMSORRY LOGO.png"/></a></div>
-                <div></div>
-            </div>
-            <div id="inde">
-                <div><a href="http://indeofhome.cafe24.com/"><img alt="" src="INDE OF HOME.png"/></a></div>
-                <div style="padding-top:25px; font-size:10px">ART WORK</div>
+            <div>
+                <div class="line">
+                    <div style="border-right: 2px solid black;"></div>
+                    <div></div>
+                </div>
+                <div class="jahwasang">
+                    <div class="chin"><a href="IndeH_main.html">自   畵   像</a></div>                
+                    <div class="han"><div></div>자 화 상</div>
+                </div>
             </div>
         </div>
-        <div></div> 
-	</div>
+        <br><br><br>
+        <div id="section">
+            <div class="top">     
+                <div></div>       
+                <div class="main" ><a href="EXHIBITION.html" style="color: white;">ABOUT - EXHIBITION</a></div>            
+                <div></div>
+            </div>   
+    
+            <div class="top">     
+                <div></div>
+                <div class="main"><a href="ARTWORKS.html" style="color: white;">ARTWORKS</a></div>                    
+                <div></div>
+            </div>  
+            
+            <div class="top">     
+                <div></div>
+                <div class="main"><a href="ism_main.html" style="color: white;">ABOUT - 1sm</a></div>                    
+                <div></div>
+            
+            </div>
+            <br><br><br>  
+            <div class="bottom" >     
+                <div class="goods_banner">
+                    <div></div>
+                    <h2 style="margin-bottom: 0px; font-style:italic;">ㅡ GOODS</h2>      
+                    <div></div>
+                </div>       
+                
+                <br>      
+                <div class="bottom_goods">
+                    <div></div>
+                    <div><a href="Goods_1.html"><img alt="" src="indeH_goods\순서 1.jpg"/><br><span>Sticker #1</span></a></div> 
+                    <div></div>
+                    <div><a href="Goods_2.html"><img alt="" src="indeH_goods\순서 2.jpg"/><br><span>Sticker #2</span></a></div> 
+                    <div></div>                
+                </div>
+                <br><br><br>
+                
+                <div class="bottom_goods">
+                    <div></div>
+                    <div><a href="Goods_3.html"><img alt="" src="indeH_goods\순서 3.jpg"/><br><span>Paper Pack</span></a></div> 
+                    <div></div>
+                    <div><a href="Goods_4.html"><img alt="" src="indeH_goods\순서 4.jpg" style="width: 100%;"/><br><span>Sticker#3</span></a></div> 
+                    <div></div>                
+                </div>
+                <br><br><br>
+                <div class="bottom_goods">
+                    <div></div>
+                    <div><a href="Goods_5.html"><img alt="" src="indeH_goods\순서 5.jpg"/><br><span>Design Tape</span></a></div> 
+                    <div></div>
+                    <div></div> 
+                    <div></div>
+                </div>
+                
+            </div>        
+        </div>
+        <br><br>
+        <hr>
+        <br>
+        <div id="footer">         
+            <div></div>
+            <div>
+                <div style="padding-left:10px; padding-bottom:10px;"><a href="https://smartstore.naver.com/inde_of_home">SHOP</a></div>
+                <div style="padding-left:10px;"><a href="https://www.instagram.com/indeh_exhibition/">INSTAGRAM</a></div>
+                <br><br>
+                <div id="sry">
+                    <div><a href="https://www.instagram.com/sim_sorry/"><img alt="" src="SIMSORRY LOGO.png"/></a></div>
+                    <div></div>
+                </div>
+                <div id="inde">
+                    <div><a href="http://indeofhome.cafe24.com/"><img alt="" src="INDE OF HOME.png"/></a></div>
+                    <div style="padding-top:15px; font-size:10px">ART WORK</div>
+                </div>
+            </div>
+            <div></div> 
+        </div>
+    </div>
+   
+    
 </body>
 </html>
