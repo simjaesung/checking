@@ -1,24 +1,25 @@
-html, body {
-    max-width: 100%;
-}
-
 img {
     height: 100%;
-    width: 100%;
-   
+    width: 100%;             
 }
 a{
     text-decoration : none;
     color: black;
 }
-#header {
+.border{
+    height: 100%;
+    margin: 80px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border:solid black 2px;
+}
+#header{
     height:100%; 
     display: grid;
-    grid-template-columns: 2fr 6fr 2fr;            
+    grid-template-columns: 2fr 8fr 2fr; 
 }
-
 .jahwasang .chin{
-    font-size: 15px;                    
+    font-size: 30px;                    
     font-style: italic;
     font-weight: 600;  
     padding:10px; 
@@ -34,25 +35,22 @@ a{
     margin-right:auto; 
     font-weight: 600;
     padding:3px;     
-    font-size: 10px;  
+    font-size: 20px;  
     font-family: 'GmarketSansMedium';
 }
-
 .line{
-    height:50px;            
+    height:100px;            
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-#section {
-    height:100%;      	
-} 
+
 #section img{
     height: 100%;
     width: 100%;
 }
        
 .top{
-    height: 60px;
+    height: 100px;
     display: grid;
     grid-template-columns: 2fr 8fr 2fr;
     font-family: 'GmarketSansMedium';
@@ -66,69 +64,63 @@ a{
 }
 .top a{
     display: inline-block;
-    padding: 15px;       
-    font-size: 7px;  
+    padding: 25px;       
+    font-size: 15px;  
 }
-
 .top .main{
     background-color: black;
 }
 
+#section span{
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
-.middle{    
-    display: grid;
-    grid-template-columns: 1fr 9fr 1fr;
-}
-.middle div{
-    height: 500px;    
-}
-.bottom img{height: 400px;}
 
 .goods_banner{
     display: grid;
     grid-template-columns: 1fr 9fr 1fr;
 }
-.top_goods{
-    display: grid;
-    grid-template-columns: 1fr 4fr 1fr 4fr 1fr;
-}
+
 .bottom_goods{
     display: grid;
     grid-template-columns: 1fr 4fr 1fr 4fr 1fr;
 }
-
-
 .bottom span{
-    font-size: 10px;   
+    font-size: 15px;   
     font-style : italic; 
     color:black; 
     font-weight: 400; 
-    margin-left: 20px;     
-   
+    margin-left: 20px;   
 }
+
+
 #footer{
-    height:100px;
     display: grid;
     grid-template-columns: 1fr 9fr 1fr;	  
     font-family: 'GmarketSansMedium';
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 600;   
-}
+}   
 #sry{
     display: grid;
     grid-template-columns: 2fr 8fr;	  
 }
 #sry img{
-    padding-left: 12px;
-    height: 80px;
-    width: 80px;
+    padding-left: 15px;
+    height: 70px;
+    width: 70px;
 }
 #inde{
     display: grid;
-    grid-template-columns: 2fr 8fr;	  
+    grid-template-columns: 1fr 8fr;	  
+}
+#inde img{            
+    width: 200px;
 }
 hr{
-    width: 1380px;
+    width: 85%;
     border: 0;
     background: #ccc;
     height: 2px;    
