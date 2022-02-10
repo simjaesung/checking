@@ -8,9 +8,7 @@ a{
 }
 .border{
     height: 100%;
-    margin: 80px;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin: 80px;    
     border:solid black 2px;
 }
 #header{
