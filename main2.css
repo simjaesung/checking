@@ -5,7 +5,8 @@ overflow-x: hidden;
 
 img {
     height: 100%;
-    width: 100%;      
+    width: 100%;
+   
 }
 a{
     text-decoration : none;
@@ -109,15 +110,23 @@ a{
 #footer{
     height:100px;
     display: grid;
-    grid-template-columns: 1fr 9fr 1fr;	    
-}   
-
-#footer div{padding-bottom: 10px;}  
-
-.foot td{
+    grid-template-columns: 1fr 9fr 1fr;	  
     font-family: 'GmarketSansMedium';
     font-size: 20px;
-    font-weight: 600; 
+    font-weight: 600;   
+}
+#sry{
+    display: grid;
+    grid-template-columns: 2fr 8fr;	  
+}
+#sry img{
+    padding-left: 12px;
+    height: 80px;
+    width: 80px;
+}
+#inde{
+    display: grid;
+    grid-template-columns: 2fr 8fr;	  
 }
 hr{
     width: 1380px;
