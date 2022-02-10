@@ -9,11 +9,13 @@ a{
 .border{
     height: 100%;
     margin: 80px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
     border:solid black 2px;
 }
-#header{   
+#header{
+    /* height: 1200px; */
+    height: 100%;
     display: grid;
     grid-template-columns: 0.5fr 15fr 2fr; 
 }
